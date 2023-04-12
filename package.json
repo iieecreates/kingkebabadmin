@@ -4,11 +4,13 @@
   "description": "",
   "license": "MIT",
   "type": "module",
-  "homepage": "http://iieecreates.github.io/kingkebabadmin",
+  "homepage": "https://iieecreates.github.io/kingkebabadmin",
   "scripts": {
     "serve": "serve .",
     "serve-dist": "serve dist/",
-    "bundle": "rimraf dist/ && rollup -c"
+    "bundle": "rimraf dist/ && rollup -c",
+	"deploy": "gh-pages -d build",
+	"predeploy": "npm run build"
   },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.2.1",
