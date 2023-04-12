@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>King Kebab 관리자</title>
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <sh-app>
+    <sh-sidebar></sh-sidebar>
+
+    <sh-main>
+      <sh-header>
+        <div slot="headline">King Kebab</div>
+        <div slot="sub-headline">게시판</div>
+
+        <nav slot="nav">
+          <a href="#" target="_blank">자료</a>
+          <a href="#" target="_blank">매출</a>
+        </nav>
+      </sh-header>
+
+      <sh-content>
+        <sh-welcome name="킹케밥"></sh-welcome>
+
+        <sh-wrap headline="월별">
+          <sh-card
+            top-line="2023년"
+            headline="1월"
+            value="30일"
+            background="linear-gradient(220.64deg, #F8BE1E 0%, #FFFFFF 100%)"
+          ></sh-card>
+
+          <sh-card
+            top-line="2023년"
+            headline="2월"
+            value="30일"
+            background="linear-gradient(220.64deg, #F8BE1E 0%, #FFFFFF 100%)"
+          ></sh-card>
+
+          <sh-card
+            top-line="2023년"
+            headline="3월"
+            value="30일"
+            background="linear-gradient(220.64deg, #F8BE1E 0%, #FFFFFF 100%)"
+          ></sh-card>
+
+          <sh-card
+            top-line="2023년"
+            headline="4월"
+            value="30일"
+            background="linear-gradient(220.64deg, #F8BE1E 0%, #FFFFFF 100%)"
+          ></sh-card>
+        </sh-wrap>
+
+        <sh-wrap nowrap="true">
+          <sh-wrap headline="직원" width="50%">
+            <sh-card
+              top-line="운영현황"
+              headline="Manage"
+              background="linear-gradient(220.64deg, #F8BE1E 0%, #FFFFFF 100%)"
+            >
+              <sh-switch></sh-switch>
+            </sh-card>
+
+            <sh-card
+              top-line="창고현황"
+              headline="Kitchen"
+              background="linear-gradient(220.64deg, #F8BE1E 0%, #FFFFFF 100%)"
+            >
+              <sh-switch></sh-switch>
+            </sh-card>
+          </sh-wrap>
+
+          <sh-wrap headline="매출" vertical="true" width="50%">
+            <sh-accordion>
+              <div slot="title">
+                통계
+              </div>
+
+              <div slot="content">
+                킹케밥 통계 자료 입니다.
+              </div>
+            </sh-accordion>
+
+            <sh-accordion>
+              <div slot="title">
+                직원
+              </div>
+
+              <div slot="content">
+                킹케밥 직원 관리 입니다.
+              </div>
+            </sh-accordion>
+
+            <sh-accordion>
+              <div slot="title">
+                급여
+              </div>
+
+              <div slot="content">
+                킹케밥 급여 관리 입니다.
+              </div>
+            </sh-accordion>
+          </sh-wrap>
+        </sh-wrap>
+      </sh-content>
+    </sh-main>
+  </sh-app>
+
+  <script src="js/minze.js" defer></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
