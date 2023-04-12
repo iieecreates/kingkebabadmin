@@ -6,6 +6,8 @@
   "type": "module",
   "homepage": "https://iieecreates.github.io/kingkebabadmin",
   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "serve": "serve .",
     "serve-dist": "serve dist/",
     "bundle": "rimraf dist/ && rollup -c",
@@ -20,6 +22,7 @@
     "serve": "^14.1.2"
   },
   "dependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "react-scripts": "^5.0.1"
   }
 }
