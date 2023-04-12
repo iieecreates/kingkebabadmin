@@ -4,6 +4,7 @@
   "description": "",
   "license": "MIT",
   "type": "module",
+  "homepage": "https://iieecreates.github.io",
   "scripts": {
     "serve": "serve .",
     "serve-dist": "serve dist/",
@@ -16,5 +17,5 @@
     "rollup-plugin-copy": "^3.4.0",
     "serve": "^14.1.2"
   }
-
+  
 }
